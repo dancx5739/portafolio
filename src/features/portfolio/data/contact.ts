@@ -15,6 +15,12 @@ export const CONTACT_CHANNELS: ContactChannel[] = [
     hoverAccent: "blue",
   },
   {
+    label: "GitHub",
+    value: SITE.githubDisplay,
+    href: SITE.githubHref,
+    hoverAccent: "red",
+  },
+  {
     label: "Ubicación",
     value: SITE.location,
   },

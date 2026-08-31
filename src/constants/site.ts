@@ -7,6 +7,8 @@ export const SITE = {
   email: "dancx5739@gmail.com",
   whatsappHref: "https://wa.me/51941416613",
   whatsappDisplay: "941 416 613",
+  githubHref: "https://github.com/dancx5739",
+  githubDisplay: "@dancx5739",
   year: "2026",
 } as const;
 
