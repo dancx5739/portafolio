@@ -58,19 +58,23 @@ export function Hero() {
         </p>
 
         <div className="animate-rise-in flex flex-wrap gap-3.5" style={{ animationDelay: "280ms" }}>
-          <a
-            href="#proyectos"
-            className="inline-flex items-center gap-2.5 rounded-xl bg-ink px-6.5 py-3.75 text-sm font-medium text-white transition-[transform,background] duration-[220ms] hover:-translate-y-1 hover:bg-red"
-          >
-            Ver proyectos
-            <span className="text-[13px]">→</span>
-          </a>
-          <a
-            href="#contacto"
-            className="inline-flex items-center gap-2.5 rounded-xl border border-border-strong bg-white px-6.5 py-3.75 text-sm font-medium text-ink transition-[transform,border-color,color] duration-[220ms] hover:-translate-y-1 hover:border-blue hover:text-blue"
-          >
-            Contactar
-          </a>
+          <span className="group inline-block">
+            <a
+              href="#proyectos"
+              className="inline-flex items-center gap-2.5 rounded-xl bg-ink px-6.5 py-3.75 text-sm font-medium text-white transition-[transform,background] duration-[220ms] group-hover:-translate-y-1 group-hover:bg-red"
+            >
+              Ver proyectos
+              <span className="text-[13px]">→</span>
+            </a>
+          </span>
+          <span className="group inline-block">
+            <a
+              href="#contacto"
+              className="inline-flex items-center gap-2.5 rounded-xl border border-border-strong bg-white px-6.5 py-3.75 text-sm font-medium text-ink transition-[transform,border-color,color] duration-[220ms] group-hover:-translate-y-1 group-hover:border-blue group-hover:text-blue"
+            >
+              Contactar
+            </a>
+          </span>
         </div>
 
         <div

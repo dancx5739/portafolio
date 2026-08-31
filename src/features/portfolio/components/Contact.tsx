@@ -5,8 +5,8 @@ import { CONTACT_CHANNELS } from "../data/contact";
 import type { AccentColor } from "../types";
 
 const HOVER_CLASS: Record<AccentColor, string> = {
-  red: "hover:border-red hover:bg-[rgba(232,35,47,0.12)]",
-  blue: "hover:border-blue-light hover:bg-[rgba(27,68,216,0.18)]",
+  red: "group-hover:border-red group-hover:bg-[rgba(232,35,47,0.12)]",
+  blue: "group-hover:border-blue-light group-hover:bg-[rgba(27,68,216,0.18)]",
 };
 
 export function Contact() {
@@ -65,17 +65,18 @@ export function Contact() {
               );
 
               const baseClass =
-                "flex flex-col gap-2.5 rounded-2xl border border-white/16 bg-white/4 p-6.5 transition-[transform,border-color,background] duration-[260ms]";
+                "flex h-full flex-col gap-2.5 rounded-2xl border border-white/16 bg-white/4 p-6.5 transition-[transform,border-color,background] duration-[260ms]";
 
               if (channel.href) {
                 return (
-                  <a
-                    key={channel.label}
-                    href={channel.href}
-                    className={`${baseClass} text-white hover:-translate-y-1.25 ${HOVER_CLASS[channel.hoverAccent ?? "red"]}`}
-                  >
-                    {content}
-                  </a>
+                  <div key={channel.label} className="group h-full">
+                    <a
+                      href={channel.href}
+                      className={`${baseClass} text-white group-hover:-translate-y-1.25 ${HOVER_CLASS[channel.hoverAccent ?? "red"]}`}
+                    >
+                      {content}
+                    </a>
+                  </div>
                 );
               }
 

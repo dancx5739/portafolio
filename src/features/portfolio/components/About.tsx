@@ -17,23 +17,27 @@ export function About() {
             profesionales, las nuevas tecnologias me inspiran a seguir aprendiendo cada día mas.
           </p>
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-            <div className="flex flex-col gap-2 rounded-2xl border border-border bg-white p-6 transition-[transform,border-color] duration-[260ms] hover:-translate-y-1 hover:border-red">
-              <span className="text-[10px] tracking-[0.14em] text-red uppercase">
-                Enfoque
-              </span>
-              <span className="text-base font-medium">Producto de punta a punta</span>
-              <span className="text-sm leading-[1.55] text-muted">
-                Desde la base de datos hasta la interfaz y el despliegue.
-              </span>
+            <div className="group h-full">
+              <div className="flex h-full flex-col gap-2 rounded-2xl border border-border bg-white p-6 transition-[transform,border-color] duration-[260ms] group-hover:-translate-y-1 group-hover:border-red">
+                <span className="text-[10px] tracking-[0.14em] text-red uppercase">
+                  Enfoque
+                </span>
+                <span className="text-base font-medium">Producto de punta a punta</span>
+                <span className="text-sm leading-[1.55] text-muted">
+                  Desde la base de datos hasta la interfaz y el despliegue.
+                </span>
+              </div>
             </div>
-            <div className="flex flex-col gap-2 rounded-2xl border border-border bg-white p-6 transition-[transform,border-color] duration-[260ms] hover:-translate-y-1 hover:border-blue">
-              <span className="text-[10px] tracking-[0.14em] text-blue uppercase">
-                Analítica
-              </span>
-              <span className="text-base font-medium">Datos que se usan</span>
-              <span className="text-sm leading-[1.55] text-muted">
-                Reportes y análisis integrados al flujo del negocio.
-              </span>
+            <div className="group h-full">
+              <div className="flex h-full flex-col gap-2 rounded-2xl border border-border bg-white p-6 transition-[transform,border-color] duration-[260ms] group-hover:-translate-y-1 group-hover:border-blue">
+                <span className="text-[10px] tracking-[0.14em] text-blue uppercase">
+                  Analítica
+                </span>
+                <span className="text-base font-medium">Datos que se usan</span>
+                <span className="text-sm leading-[1.55] text-muted">
+                  Reportes y análisis integrados al flujo del negocio.
+                </span>
+              </div>
             </div>
           </div>
         </Reveal>
