@@ -35,7 +35,7 @@ export function Contact() {
         style={{ background: "radial-gradient(circle, rgba(27,68,216,0.40), transparent 66%)" }}
       />
 
-      <div className="relative flex max-w-225 flex-col gap-10 lg:gap-12">
+      <div className="relative flex max-w-270 flex-col gap-10 lg:gap-12">
         <Reveal>
           <SectionHeading
             index="05"
@@ -60,7 +60,7 @@ export function Contact() {
                   <span className="text-[10px] tracking-[0.16em] text-white/55 uppercase">
                     {channel.label}
                   </span>
-                  <span className="text-[17px] font-medium">{channel.value}</span>
+                  <span className="text-[17px] font-medium break-words">{channel.value}</span>
                 </>
               );
 
